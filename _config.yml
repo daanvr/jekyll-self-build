@@ -27,6 +27,17 @@ url: "daan.vanramshor.st" # the base hostname & protocol for your site, e.g. htt
 # twitter_username: jekyllrb
 github_username:  daanvr
 
+# Author Settings
+author: Daan van Ramshorst # add your name
+author-img: daan.jpg # add your photo
+about-author: Explore things I have made, things I find interesting and things you can hire me for. # add description
+# about-author: I am a web developer focusing on front-end development. Always hungry to keep learning. # add description
+# social-twitter: # add your Twitter handle
+# social-facebook: # add your Facebook handle
+social-github: daanvr # add your Github handle
+social-linkedin: daanvanramshorst # add your Linkedin handle
+social-email: daan@vanramshor.st# add your Email address
+
 # Build settings
 theme: minima
 plugins:
