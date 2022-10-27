@@ -1,0 +1,167 @@
+<style>
+    #pts {
+        /* portfolio Tiles Section */
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        scale: 1.08;
+        overflow: hidden;
+        /* background-color: rgba(256, 256, 256, 1); */
+        margin: 1.8vw 0;
+        /* padding: 5px 0; */
+    }
+
+    #pts div {
+        width: calc(25% - (3px * 4));
+        aspect-ratio: 16/9;
+        border-radius: 5px;
+        margin: 3px;
+        transition: all .2s ease-in-out;
+        box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+        /* filter: grayscale(100%); */
+        overflow: hidden;
+    }
+
+    #pts div:hover {
+        scale: 0.95;
+        /* rotate: -0.5deg; */
+        /* box-shadow: none; */
+        /* box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.3); */
+        cursor: pointer;
+        filter: none;
+    }
+
+    #pts div img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #pts div:hover a::after {
+        content: attr(data-title);
+        position: absolute;
+        bottom: 0;
+        left: 0px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        display: flex;
+        justify-content: center;
+        font-size: 1.5em;
+        color: white;
+        box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.3);
+    }
+
+    /* bigger than mobile */
+    @media (min-width: 600px) {
+        #pts :nth-child(5) {
+            /* first on second row on large screen */
+            width: calc((25% - (3px * 5)) / 2);
+        }
+
+        #pts :nth-child(9) {
+            /* last on second row on large screen */
+            width: calc((25% - (3px * 5)) / 2);
+        }
+    }
+
+    /* mobile devices */
+    @media only screen and (max-width: 600px) {
+        #pts div {
+            width: calc(33.33% - (3px * 2.5));
+        }
+
+        #pts :nth-child(4) {
+            /* first on second row on large screen */
+            width: calc((33% - (3px * 4)) / 2);
+        }
+
+        #pts :nth-child(7) {
+            /* last on second row on large screen */
+            width: calc((33% - (3px * 4)) / 2);
+        }
+
+        /* all child after 10  */
+        #pts :nth-child(n+11) {
+            display: none;
+        }
+    }
+</style>
+
+<section id="pts">
+    <div>
+        <a href="https://api.mapbox.com/styles/v1/daanvr/cjuplq0zm2yia1fmteirkrvcd.html?title=view&access_token=pk.eyJ1IjoiZGFhbnZyIiwiYSI6ImNpdTJmczN3djAwMHEyeXBpNGVndWtuYXEifQ.GYZf7r9gTfQL3W-GpmmJ3A&zoomwheel=true&fresh=true#5.27/48.229/4.821/0/1" data-title="Daan's life map">
+            <img src="assets/img/projects/DaansLifeMap_4.jpg" alt="Daan's life map">
+        </a>
+    </div>
+    <div>
+        <a href="https://destraatopmaat.nl" data-title="De Straat op Maat">
+            <img src="assets/img/projects/DeStraatOpMaat_2.jpg" alt="De Straat op Maat">
+        </a>
+    </div>
+    <div>
+        <a href="https://historyoftheut.com/" data-title="Campus history">
+            <img src="assets/img/projects/UTMap_3.jpg" alt="Campus history">
+        </a>
+    </div>
+    <div>
+        <a href="https://www.uitstootvanmobiliteit.nl" data-title="Uitstoot van Mobiliteit">
+            <img src="assets/img/projects/UitstootVanMobiliteit_1.png" alt="Uitstoot van Mobiliteit">
+        </a>
+    </div>
+
+
+
+    <div class="firstHalf">
+        <a href="https://gis.dat.nl/gsm/" data-title="Mobile data map">
+            <img src="assets/img/projects/GSMMap_1.jpg" alt="Trafic map based on mobile data">
+        </a>
+    </div>
+    <div>
+        <a href="https://ebikeproof.nl/" data-title="E-bike proof">
+            <img src="assets/img/projects/EbikeProof_2.jpg" alt="E-bike proof">
+        </a>
+    </div>
+
+    <div>
+        <a href="https://wikiexplore.org/" data-title="Wiki Explore">
+            <img src="assets/img/projects/WikiExplore_2.jpg" alt="Wiki Explore">
+        </a>
+    </div>
+    <div>
+        <a href="https://www.wikidata.org/wiki/User:Daanvr" data-title="Wikidata">
+            <img src="assets/img/projects/Wikidata_2.png" alt="Wikidata">
+        </a>
+    </div>
+    <div class="lastHalf">
+        <a href="https://wikiexplore.org/" data-title="Wikipedia map">
+            <img src="assets/img/projects/Wikipedia_1.jpg" alt="Wikipedia map">
+        </a>
+    </div>
+
+
+
+    <div>
+        <a href="https://passendeparkeernorm.nl" data-title="Passende parkeernorm">
+            <img src="assets/img/projects/PassendeParkeernorm_1.jpg" alt="Passende parkeernorm">
+        </a>
+    </div>
+    <div>
+        <a href="https://gis.dat.nl/dus-ams/" data-title="Metropoolregio Amsterdam">
+            <img src="assets/img/projects/DUSMRA_2.jpg" alt="Metropoolregio Amsterdam">
+        </a>
+    </div>
+    <div>
+        <a href="https://commons.wikimedia.org/wiki/User:Daanvr" data-title="Wikimedia Commons">
+            <img src="assets/img/projects/Commons_1.jpg" alt="Wikimedia Commons">
+        </a>
+    </div>
+    <div>
+        <a href="https://www.energieke.club" data-title="Energieke Club">
+            <img src="assets/img/projects/EnergiekeClub_1.png" alt="Energieke Club">
+        </a>
+    </div>
+</section>
+
+<script>
+</script>

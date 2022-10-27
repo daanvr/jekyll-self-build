@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-{% include head.html %}
-<body>
 
-  <div class="wrapper">
-    {{ content }}
-  </div>
-  
+<head>
+  {% include head.html %}
+</head>
+
+<body>
+  <style>
+    body {
+      background-image: linear-gradient(320deg, #136a8a, #267871);
+      /* background-image: linear-gradient(0deg, #FF8008, #FFC837); */
+      /* background-image: linear-gradient(45deg, #22c1c3, #fdbb2d); */
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+  </style>
+
+  {{ content }}
 
 </body>
+
 </html>

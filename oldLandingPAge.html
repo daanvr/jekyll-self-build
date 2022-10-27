@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta title="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daan van Ramshorst</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <style>
+        body {
+            /* background-image: linear-gradient(50deg, #D6FF7F, #00B3CC); */
+            /* background-image: linear-gradient(0deg, #FF8008, #FFC837); */
+            background-image: linear-gradient(45deg, #22c1c3, #fdbb2d);
+            font-family: Arial, Helvetica, sans-serif;
+            /* no scrolling */
+            overflow: hidden;
+
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+
+        }
+
+        .container {
+            width: 80%;
+            max-width: 350px;
+            padding: 20px;
+            background-color: rgba(256, 256, 256, 0.15);
+            box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .container h1 {
+            margin-top: 0.1em;
+            font-size: 2em;
+            font-weight: 400;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .profileImg {
+            width: 80%;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: solid 3px white;
+        }
+
+        .profileImg2 {
+            width: 80%;
+            border-radius: 150px 150px 30px 30px;
+            margin-bottom: 15px;
+            border: solid 3px white;
+        }
+
+        .contactInfo {
+            /* border-radius: 30px 30px 150px 150px; */
+            border-radius: 30px 30px 100px 100px;
+            padding-bottom: 40px;
+            border: solid 3px white;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            text-decoration-color: #FFF;
+        }
+
+        .socialIcons {
+            justify-content: center;
+            align-items: center;
+            color: #FFF;
+            font-size: 3.3em;
+            padding: 10px;
+            margin: 2px;
+            border-radius: 10px;
+        }
+
+        .socialIcons:hover {
+            background-color: rgba(256, 256, 256, 0.15);
+        }
+    </style>
+    <script defer></script>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <section>
+            <img class="container profileImg2" src="Daan2021.jpeg" alt="Daan van Ramshorst">
+            <div class="container contactInfo">
+                <h1>Daan van Ramshorst</h1>
+                <!-- <a href="https://github.com/daanvr"><i class="fa fa-brands fa-github socialIcons"></i></a> -->
+                <a href="tel:+33768583535"><i class="fa fa-solid fa-phone socialIcons"
+                        style="font-size: 2.6em; translate: 0 -5px;"
+                        ></i></a>
+                <a href="mailto:daan@vanramshor.st"><i class="fa fa-solid fa-envelope socialIcons"></i></a>
+                <a href="https://www.linkedin.com/in/daanvanramshorst/"><i
+                        class="fa fa-brands fa-linkedin socialIcons"></i></a>
+
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
