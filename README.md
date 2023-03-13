@@ -10,7 +10,7 @@ To launch a live Jekyll server, you can follow these steps:
 2. Navigate to the root directory of your Jekyll project using the cd command.
 3. Run the following command to launch the Jekyll server:
 
-```terminal
+```zsh
 $ bundle exec jekyll serve
 ```
 
