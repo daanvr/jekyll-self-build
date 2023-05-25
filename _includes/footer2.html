@@ -1,0 +1,42 @@
+<style>
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+
+.contact-grid a {
+  display: block;
+  background-color: rgba(256, 256, 256, 1);
+  color: #264653;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.contact-grid a i {
+  margin-right: 0.5rem;
+}
+
+.contact-grid a:hover {
+
+}
+
+@media (max-width: 767px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+<div class="contact-grid">
+  <a href="tel:+33768583535"><i class="fa fa-solid fa-phone socialIcons"></i>+33 7 68 58 35 35</a>
+  <a href="mailto:daan@vanramshor.st"><i class="fa fa-solid fa-envelope socialIcons"></i>daan@vanramshor.st</a>
+  <a href="https://www.linkedin.com/in/daanvanramshorst/"><i class="fa fa-brands fa-linkedin socialIcons"></i>LinkedIn</a>
+  <a href="https://api.mapbox.com/styles/v1/daanvr/cjuplq0zm2yia1fmteirkrvcd.html?title=view&access_token=pk.eyJ1IjoiZGFhbnZyIiwiYSI6ImNpdTJmczN3djAwMHEyeXBpNGVndWtuYXEifQ.GYZf7r9gTfQL3W-GpmmJ3A&zoomwheel=true&fresh=true#5.27/48.229/4.821/0/1"><i class="fa fa-map-marker-alt socialIcons"></i>The Netherlands & France</a>
+</div>

@@ -1,0 +1,79 @@
+<style>
+    #monitorSetup {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #screens {
+        perspective: 100vw;
+        perspective-origin: center center;
+        transform-style: preserve-3d;
+        display: flex;
+        /* scale: ; */
+        transform: scale(calc(1 / 100 * var(--vw)));
+        width: 100vw; /* set the width of the element to 100vw */
+        height: auto; /* set the height of the element to auto to maintain aspect ratio */
+
+    }
+
+    #monitorSetup iframe {
+        border: none;
+        width: 32vw;
+        aspect-ratio: 16/9;
+        /* box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.5); */
+        border-radius:0.5vw;
+        border: solid 0.6vw black;
+    }
+
+    #screens :nth-child(1) {
+        transform: rotate3d(0, -100, 0, -45deg) scale(0.85) translateX(43%);
+        box-shadow: 5px 5px 15px 3px rgba(0, 0, 0, 0.25);
+    }
+
+    #screens :nth-child(2) {
+        transform: scale(0.72);
+        box-shadow: 0px 5px 15px 3px rgba(0, 0, 0, 0.25);
+    }
+
+    #screens :nth-child(3) {
+        transform: rotate3d(0, -100, 0, 45deg) scale(0.85)translateX(-43%);
+        box-shadow: -5px 5px 15px 3px rgba(0, 0, 0, 0.25);
+    }
+</style>
+<script>
+    if (window.innerWidth >= 768) { // if the screen is larger than 768px wide
+        var section = document.createElement("section");
+        section.id = "monitorSetup";
+
+        var div = document.createElement("div");
+        div.id = "screens";
+
+        div.innerHTML = `
+        <iframe src="https://wikiexplore.org/#15.88/48.853875/2.347522" title="description"></iframe>
+        <iframe src="https://api.mapbox.com/styles/v1/daanvr/cjuplq0zm2yia1fmteirkrvcd.html?title=view&access_token=pk.eyJ1IjoiZGFhbnZyIiwiYSI6ImNpdTJmczN3djAwMHEyeXBpNGVndWtuYXEifQ.GYZf7r9gTfQL3W-GpmmJ3A&zoomwheel=true&fresh=true#10.94/52.1124/5.337/0/1" title="description"></iframe>
+        <iframe src="https://destraatopmaat.nl/straat.html?straat=0" title="description"></iframe>`;
+
+        section.appendChild(div);
+        document.body.appendChild(section);
+    }
+</script>
+
+
+
+
+
+
+<!-- could be used -->
+<!-- <iframe src="https://destraatopmaat.nl/straat.html?straat=1" title="description"></iframe>
+<iframe src="https://destraatopmaat.nl/straat.html?straat=2" title="description"></iframe>
+<iframe src="https://destraatopmaat.nl/straat.html?straat=3" title="description"></iframe>
+<iframe src="https://destraatopmaat.nl/straat.html?straat=4" title="description"></iframe>
+<iframe src="https://destraatopmaat.nl" title="description"></iframe>
+<iframe src="https://historyoftheut.com" title="description"></iframe> -->
+
+
+<!--  do not work in iframe -->
+<!-- <iframe src="https://www.uitstootvanmobiliteit.nl/dashboard.html?x=363" title="description"></iframe> -->
+<!-- <iframe src="https://ebikeproof.nl/#maplocation=8/51.938/5.426" title="description"></iframe> -->

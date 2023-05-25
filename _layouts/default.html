@@ -2,15 +2,18 @@
 <html lang="en">
 
 <head>
-  {% include head.html %}
+  {% include htmlhead.html %}
 </head>
 
 <body>
   <style>
     body {
-      background-image: linear-gradient(320deg, #136a8a, #267871);
+      /* background-image: linear-gradient(320deg, #136a8a, #267871); */
       /* background-image: linear-gradient(0deg, #FF8008, #FFC837); */
-      /* background-image: linear-gradient(45deg, #22c1c3, #fdbb2d); */
+      /* background-image: linear-gradient(320deg, #22c1c3, #fdbb2d); */
+      /* background-color: #136a8a; */
+      /* background-color: #267871; */
+      background-color: #264653;
       font-family: Arial, Helvetica, sans-serif;
       margin: 0;
       padding: 0;
@@ -18,7 +21,18 @@
     }
   </style>
 
-  {{ content }}
+  <header>
+    <!-- Navigation and/or branding -->
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer>
+    <!-- {% include footer.html %} -->
+    {% include footer2.html %}
+  </footer>
 
 </body>
 

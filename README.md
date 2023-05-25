@@ -24,7 +24,7 @@ To stop the server, simply press Ctrl+C in the terminal or command prompt where 
 
 
 ## Jekyll tips
-### Jekyll default variables
+### Jekyll default variables exemples
 ```json
 {
   "site": {

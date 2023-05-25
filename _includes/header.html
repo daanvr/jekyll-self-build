@@ -1,0 +1,79 @@
+<style>
+    #welcome {
+        position: relative;
+        height: 50vw;
+        background-image: url('assets/img/DJI_0437 (1).jpeg');
+        background-size: cover;
+        z-index: 0;
+        overflow: hidden;
+    }
+
+    /* #welcome::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background:
+            radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 75%, #264653 100%),
+            linear-gradient(180deg, rgba(0, 0, 0, 0) 85%, #264653);
+        z-index: -1;
+    } */
+
+    #welcome h1,
+    h2,
+    h3 {
+        color: whitesmoke;
+        font-weight: 400;
+        z-index: 1;
+    }
+
+    #welcome h1 {
+        font-size: 7vw;
+        margin-bottom: 0;
+    }
+
+    #welcome h2 {
+        margin-top: 20px;
+        font-size: 3vw;
+    }
+
+    #welcome h3 {
+        font-size: 1.5em;
+    }
+
+    #welcome #textPositioner {
+        position: absolute;
+        top: 15%;
+        left: 10%;
+    }
+
+    #welcome img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 45vw;
+        /* width: 100%; */
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    #welcome #nextTitle {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: 0 0 0 10px;
+        padding: 0;
+    }
+</style>
+
+<section id="welcome">
+    <div id="textPositioner">
+        <H1>HI, I'M DAAN 👋</H1>
+        <H2>I am a creative technologist, <br>
+            I build <u>things</u> for the web.
+        </H2>
+    </div>
+    <!-- <img src="assets/img/projects/Daan.png" alt="Daan"> -->
+</section>

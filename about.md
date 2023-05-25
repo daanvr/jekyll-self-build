@@ -1,6 +1,7 @@
 ---
-layout: main
+layout: default
 title: About
+# permalink:
 
 ---
 

@@ -1,5 +1,5 @@
 ---
-layout: main
+layout: default
 title: Energieke Club
 permalink: /Energieke_Club
 ---
